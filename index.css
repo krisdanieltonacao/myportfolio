@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+#mynavbar {
+  background-color: #369;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1920px) {
+  #slogan {
+    position: absolute;
+    top: 65%;
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1680px) {
+  #slogan {
+    position: absolute;
+    top: 55%;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1420px) {
+  #slogan {
+    position: absolute;
+    top: 65%;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1165px) {
+  #slogan {
+    position: absolute;
+    top: 55%;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 985px) {
+  #slogan {
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 845px) {
+  #slogan {
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+  }
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 10rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  font-weight: 700;
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+
+#progresstext {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+#progresslogo {
+  width: 160px;
+  position: absolute;
+  opacity: 0.2;
+}
+
+#progresslogo:hover {
+  opacity: 1;
+}
+
+.bar {
+  margin-bottom: 15px;
+}
+.info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info:hover {
+  color: turquoise;
+}
+.bar .info span {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px;
+}
+.line {
+  height: 10px;
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background: red;
+}
+.html::before {
+  width: 75%;
+}
+.css::before {
+  width: 70%;
+}
+.javascript::before {
+  width: 75%;
+}
+.nodejs::before {
+  width: 70%;
+}
+.reactjs::before {
+  width: 60%;
+}
+.bootstrap::before {
+  width: 75%;
+}
+.git::before {
+  width: 80%;
+}
+.sql::before {
+  width: 75%;
+}
+
+.tools-icons {
+  width: 180px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+.card:hover {
+  background: #369;
+  color: #def;
+  border-color: yellow;
+  border-width: 1px;
+}
+
+#mycontact {
+  background-color: rgb(94, 169, 245);
+}
+
+#contactarea {
+  background-color: 007bff;
+}
+form {
+  background-color: #369;
+  padding: 2vw 4vw;
+  /* width: 90%; */
+  border-radius: 10px;
+}
+
+form button {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 20px auto 0;
+  border-radius: 30;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  outline: none;
+  padding: 20px;
+}
+#myfooter {
+  background-color: #369;
+  color: #def;
+  text-align: center;
+}
