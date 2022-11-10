@@ -9,7 +9,9 @@
 #mynavbar {
   background-color: #369;
 }
-
+.socialMedLinks {
+  width: 80px;
+}
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
