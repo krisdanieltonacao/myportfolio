@@ -331,22 +331,28 @@
   <div class="d-lg-flex d-md-flex justify-content-center">
   <div class="col-lg-6 col-md-6 m-0">
   <form action="https://formsubmit.co/af9c41ed731a9fde09976fbc3e304773" method="POST">
+    
+    <!-- Honeypot -->
+    <input type="text" name="_honey" style="display: none;">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
     <div class="mb-3">
       <label for="inputName1" class="form-label">Name:</label>
-      <input type="text" class="form-control" name="name" id="InputName1">
+      <input type="text" class="form-control" name="Name" id="InputName1">
     </div>
     <div class="mb-3">
       <label for="InputEmail1" class="form-label">Email Address:</label>
-      <input type="email" class="form-control" name="email" id="InputEmail1">
+      <input type="email" class="form-control" name="Email" id="InputEmail1">
       <div>We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="InputNumber1" class="form-label">Contact Number:</label>
-      <input type="text" class="form-control" name="phoneNumber" id="InputNumber1">
+      <input type="text" class="form-control" name="Contace Number" id="InputNumber1">
     </div>
     <div class="mb-3">
       <label for="InputMessage1" class="form-label">Message:</label>
-      <textarea type="text" rows="5" class="form-control" name="message" id="InputMessage1"></textarea>
+      <textarea type="text" rows="5" class="form-control" name="Message" id="InputMessage1"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
