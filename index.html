@@ -49,17 +49,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="#mycontact">Contact Me</a>
               </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+              
               <li class="nav-item">
                 <a class="nav-link" href="https://www.linkedin.com/in/kris-tonacao/"><img src="./assets/img/linkedIn-64x180.png" class="socialMedLinks"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://github.com/krisdanieltonacao"><img src="./assets/img/github-51x180.png" class="socialMedLinks"></a>
               </li>
-            </ul>
+            
+          </ul>
           </div>
         </div>
       </nav>
@@ -338,6 +338,7 @@
 <!-- END OF TOOLS -->
 <!-- CONTACT -->
 <section class="text-light container-fluid mt-5 p-5" id="mycontact">
+  <h2 class="text-center mt-5 p-5">Contact Me</h2>
   <div class="d-lg-flex d-md-flex justify-content-center">
   <div class="col-lg-6 col-md-6 m-0">
   <form action="https://formsubmit.co/af9c41ed731a9fde09976fbc3e304773" method="POST">
@@ -368,33 +369,7 @@
   </form>
   </div>
 </div>
-  <!-- <div class="d-lg-flex d-md-flex justify-content-center">
-    <div class="col-lg-6 col-md-6 m-0">
-      <div class="formcontainer">
-        <form onsubmit="sendEmail(); reset(); return false">
-          <h3 class="text-center">Contact Form</h3>
-          <div class="form-group pt-3">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Your Name" id="name">
-          </div>
-          <div class="form-group">
-            <label>Email address</label>
-            <input type="email" class="form-control" placeholder="name@example.com" id="email">
-          </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="tel" class="form-control" placeholder="Your Phone Number" id="phone">
-          </div>
-
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" rows="5" placeholder="Your Message" id="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div> -->
+ 
 </section>
 <!-- END OF CONTACT -->
 <!-- FOOTER -->
@@ -405,24 +380,7 @@
     <div>Last Updated: November 10, 2022</div>
   </footer>
 </section>
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-        Email.send({
-        SecureToken: "0f334875-ac07-4392-b9e5-07028b9acc3a",
-        To : "krisdanieltonacao@gmail.com",
-        From : document.getElementById("email").value,
-        Subject : "New Enquiry",
-        Body : "Name: " + document.getElementById("name").value
-            + "<br>Email: " + document.getElementById("email").value
-            + "<br>Contact Number: " + document.getElementById("phone").value
-            + "<br>Message: " + document.getElementById("message").value
-    }).then(
-      message => alert("Message Sent Successfully.")
-    );
-  }
 
-</script> -->
 <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
